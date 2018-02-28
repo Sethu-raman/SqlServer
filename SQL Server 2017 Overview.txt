@@ -14,6 +14,57 @@ Protect your data at rest and in motion
 
 encrypted column key (Ex: SSN field)
 
+Dynamic Data Masking
 
+role based encryption
 
+Stretch SQL Server into Azure
+securely stretch cold tables to Azure with remote query processing
+push tables into cloud (helps maintainability and audit history)
 
+stretch database available only in Azure
+
+containerization
+
+temporal tables - change tracking
+
+temporal database support - BETWEEN
+
+Select * from Table 
+For SYSTEM_TIME BETWEEN @Start and @End
+where ID = 1;
+
+FOR JSON
+
+In PATH mode, use the dot syntax - for ex: 'Item.Price'
+to format nested output.
+
+use the ROOT option to specify a named root element.
+
+SELECT Number AS [Order.Number], Date as [Order.Date]
+	CUSTOMER AS AccountNumber,
+	Price AS 'Item.UnitPrice', Quantity AS 'Item.Quantity'
+FROM SalesOrder
+FOR JSON PATH, ROOT('Orders');
+
+{
+	Orders:
+	{	
+		"Order":{
+			"Number":"12345",
+			"Date":"2018-02-28"
+		},
+		"AccountNumber":"AWS1234",
+		"Item":{
+			"Price":24.99,
+			"Quantity":2
+		}		
+	}
+}
+
+Machine Learning Services
+
+Analytics Library
+Analytical engines - integrate with R/Python (Jupyter Notebook)
+
+Data Management Layer - Relational data
