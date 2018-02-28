@@ -1,0 +1,19 @@
+SQL Server 2017
+
+Everything Build In - Technical Overview
+
+built-in json deserialization?
+
+PolyBase - T-SQL yarn engine to push data 
+BLOB storage
+
+PolyBase architecture
+
+Protect your data at rest and in motion
+(without impacting database performance)
+
+encrypted column key (Ex: SSN field)
+
+
+
+
