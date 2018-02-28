@@ -48,18 +48,30 @@ FROM SalesOrder
 FOR JSON PATH, ROOT('Orders');
 
 {
-	Orders:
-	{	
-		"Order":{
-			"Number":"12345",
-			"Date":"2018-02-28"
+	"Orders": [
+		{
+			"Order": {
+				"Number": "12345",
+				"Date": "2018-02-28"
+			},
+			"AccountNumber": "AWS1234",
+			"Item": {
+				"Price": 24.99,
+				"Quantity": 2
+			}
 		},
-		"AccountNumber":"AWS1234",
-		"Item":{
-			"Price":24.99,
-			"Quantity":2
-		}		
-	}
+		{
+			"Order": {
+				"Number": "98765",
+				"Date": "2018-03-01"
+			},
+			"AccountNumber": "BBC1234",
+			"Item": {
+				"Price": 19.99,
+				"Quantity": 6
+			}
+		}
+	]
 }
 
 Machine Learning Services
